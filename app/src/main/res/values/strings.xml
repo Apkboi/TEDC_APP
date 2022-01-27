@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TEDC</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_logbook"> Upload LogBook</string>
+    <string name="menu_complaint">Complaint</string>
+    <string name="menu_information">Information</string>
+    <string name="baking">Learn  how to bake  (Cake, Bread chin chin etc)</string>
+    <string name="news_tittle">TEDC has opened the registration for different skills fom 26th Mard</string>
+</resources>

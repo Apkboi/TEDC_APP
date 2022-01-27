@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_log"
+        android:src="@drawable/news"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="29dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="@color/teal_200"
+        android:padding="5dp"
+        android:src="@drawable/ic_close" />
+
+</FrameLayout>

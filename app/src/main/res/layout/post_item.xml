@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="5dp"
+    android:background="@drawable/rounded_bg"
+    android:backgroundTint="#F8F6F1"
+    android:padding="6dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/news_tittle"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_tittle"
+        android:textColor="@color/onsecondary"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/news_tittle"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_description"
+        android:textColor="@color/onsecondary"/>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/rounded_bg"
+            android:scaleType="centerCrop"
+            android:maxHeight="100dp"
+            android:src="@drawable/placeholder"
+            android:id="@+id/postImage"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10mins ago"
+        android:id="@+id/txt_time"/>
+
+
+
+</LinearLayout>

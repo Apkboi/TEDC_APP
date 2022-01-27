@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.logbook.LogBookFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:id="@+id/btn_save"
+        android:text="SAVE"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_Logfullname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_bg">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_Logfullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@color/primaryvariant2"
+            android:hint="Full Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_LogregNo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_bg">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_LogregNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@color/primaryvariant2"
+            android:hint="Reg No"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagesRecycler"
+        android:orientation="horizontal"
+        app:spanCount="1"
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/images_item"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:id="@+id/btn_addImage"
+        android:layout_marginTop="10dp"
+        android:padding="16dp"
+        android:text="PiCK Image"/>
+
+
+</LinearLayout>
